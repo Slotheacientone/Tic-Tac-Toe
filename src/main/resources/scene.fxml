@@ -14,6 +14,6 @@
       <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <Canvas fx:id="canvas" height="400.0" width="400.0" />
+      <Canvas fx:id="canvas" height="400.0" onMouseClicked="#clicked" width="400.0" />
    </children>
 </GridPane>
