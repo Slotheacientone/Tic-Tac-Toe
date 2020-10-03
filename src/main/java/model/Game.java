@@ -17,14 +17,12 @@ public class Game {
             for (int j = 0; j < board[i].length; j++) {
                 double xTopLeft = j * blockWidth + (blockWidth * 1 / 6);
                 double xBottomRight = j * blockWidth + (blockWidth * 5 / 6);
-                switch (board[i][j]){
-                    case O:
-                        gc.strokeOval(xTopLeft, yTopLeft,blockWidth*2/3, blockHeight*2/3);
-                        break;
-                    case X:
+                switch (board[i][j]) {
+                    case O -> gc.strokeOval(xTopLeft, yTopLeft, blockWidth * 2 / 3, blockHeight * 2 / 3);
+                    case X -> {
                         gc.strokeLine(xTopLeft, yTopLeft, xBottomRight, yBottomRight);
                         gc.strokeLine(xTopLeft, yBottomRight, xBottomRight, yTopLeft);
-                        break;
+                    }
                 }
             }
         }
