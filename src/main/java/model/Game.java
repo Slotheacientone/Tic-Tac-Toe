@@ -1,7 +1,7 @@
 package model;
 
 public class Game {
-    private char[][] board = new char[3][3];
+    private final char[][] board = new char[3][3];
     private char turn;
     private int move;
     int xWinCount = 0;
