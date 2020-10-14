@@ -4,9 +4,9 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
 public class View {
-    private GraphicsContext gc;
-    private double blockWidth;
-    private double blockHeight;
+    private final GraphicsContext gc;
+    private final double blockWidth;
+    private final double blockHeight;
 
     public View(GraphicsContext gc, double blockWidth, double blockHeight) {
         this.gc = gc;
