@@ -19,16 +19,15 @@ public class Controller {
     @FXML
     private Label oWin;
 
-    private Game game = new Game();
+    private final Game game = new Game();
     private View view;
     private double blockWidth;
     private double blockHeight;
-    private GraphicsContext gc;
     boolean win = false;
 
     @FXML
     public void initialize() {
-        gc = canvas.getGraphicsContext2D();
+        GraphicsContext gc = canvas.getGraphicsContext2D();
         blockWidth = canvas.getWidth() / 3;
         blockHeight = canvas.getHeight() / 3;
         //Start the game
